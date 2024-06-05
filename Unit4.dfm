@@ -1,8 +1,8 @@
 object Form4: TForm4
-  Left = 247
-  Top = 132
+  Left = 403
+  Top = 239
   Width = 571
-  Height = 564
+  Height = 562
   Caption = 'KATEGORI'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -101,5 +101,6 @@ object Form4: TForm4
     Height = 49
     Caption = 'CARI'
     TabOrder = 6
+    OnClick = btn2Click
   end
 end

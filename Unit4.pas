@@ -21,6 +21,7 @@ type
     procedure Button2Click(Sender: TObject);
     procedure dbgrd1CellClick(Column: TColumn);
     procedure Button3Click(Sender: TObject);
+    procedure btn2Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -85,6 +86,18 @@ begin
   open;
 end;
 ShowMessage('Data Berhasil DiDelete');
+end;
+
+procedure TForm4.btn2Click(Sender: TObject);
+begin
+with DataModule2.tbKategori do
+  begin
+    Close;
+    SQL.Clear;
+    SQL.Text:='select * from kategori where name like'+QuotedStr('%'+edt2.Text+'%');
+    Open;
+
+  end;
 end;
 
 end.
